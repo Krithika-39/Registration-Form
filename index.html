@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <!-- tailwind css -->
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body class="bg-gray-900 flex  justify-center items-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+
+        <h2 class="text-2xl font-bold text-center mb-6">Register</h2>
+
+        <form id="registerForm">
+
+            <!-- Name -->
+            <div class="mb-4">
+                <label class="mb-1">Name</label>
+                <input id="name" type="text" class="w-full border p-2 rounded">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4">
+                <label class="mb-1 ">Email</label>
+                <input id="email" type="text" class="w-full border p-2 rounded">
+            </div>
+
+            <!-- Password -->
+            <div class="mb-4">
+                <label class="block mb-1">Password</label>
+                <div class="flex">
+                    <input id="password" type="password" class="w-full border p-2 rounded-l">
+                    <button type="button" onclick="togglePassword()" class="bg-gray-200 px-3 rounded-r">👁</button>
+                </div>
+            </div>
+
+            <p id="message" class="text-red-500 text-sm mb-4"></p>
+
+            <button type="submit" class="w-full bg-red-500 text-white p-2 rounded hover:bg-blue-600">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+    <!-- js code -->
+    <script src="script.js"></script>
+
+        
+
+</body>
+
+</html>
